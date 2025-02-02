@@ -1,0 +1,73 @@
+[package]
+name = "nexusshell"
+version = "0.1.0"
+edition = "2021"
+authors = ["NexusShell Team"]
+description = "A next-generation command-line interface with AI capabilities"
+
+[dependencies]
+tokio = { version = "1.32.0", features = ["full"] }
+async-trait = "0.1.74"
+anyhow = "1.0.75"
+futures = "0.3.28"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+dirs = "5.0.1"
+ssh2 = "0.9.4"
+indicatif = "0.17.7"
+colored = "2.0.4"
+rustyline = "12.0.0"
+syntect = "5.1.0"
+chrono = "0.4.31"
+regex = "1.9.5"
+glob = "0.3.1"
+users = "0.11.0"
+base64 = "0.21.4"
+rpassword = "7.2.0"
+crossterm = "0.27.0"
+notify = "6.1.1"
+lazy_static = "1.4.0"
+
+# AWS SDK dependencies
+aws-config = "0.56.1"
+aws-sdk-ec2 = "0.33.0"
+aws-sdk-s3 = "0.33.0"
+aws-sdk-iam = "0.33.0"
+aws-types = "0.56.1"
+
+# Azure SDK dependencies
+azure_identity = "0.16.0"
+azure_storage = "0.16.0"
+azure_storage_blobs = "0.16.0"
+azure_mgmt_compute = "0.16.0"
+azure_mgmt_storage = "0.16.0"
+azure_core = "0.16.0"
+
+# Google Cloud SDK dependencies
+google-cloud-storage = "0.12.0"
+google-cloud-compute = "0.4.0"
+google-cloud-googleapis = "0.11.0"
+google-cloud-auth = "0.11.0"
+
+# Container dependencies
+bollard = "0.15.0"
+kube = { version = "0.87.1", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.20.0", features = ["v1_27"] }
+
+# Scripting and scheduling dependencies
+rhai = { version = "1.16.1", features = ["sync", "serde"] }
+cron = "0.12.0"
+uuid = { version = "1.4.1", features = ["v4", "serde"] }
+humantime = "2.1.0"
+
+# Development tools dependencies
+semver = "1.0.18"
+ignore = "0.4.20"
+reqwest = { version = "0.11.20", features = ["json"] }
+urlencoding = "2.1.3"
+toml = "0.8.2"
+
+# Security dependencies
+ring = "0.17.5"
+base64 = "0.21.4"
+dirs = "5.0.1"
